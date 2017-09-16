@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="AppDistanceGPS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppDistanceGPS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+    </Grid>
+    -->
+    <StackPanel>
+        <TextBlock Text="Get Distance between 2 coordinates"/>
+        
+        <TextBox Name="txtLatitude1" Text="Latitude1"/>
+        <TextBox Name="txtLongitude1" Text="Longitude1"/>
+
+        <TextBox Name="txtLatitude2" Text="Latitude2"/>
+        <TextBox Name="txtLongitude2" Text="Longitude2"/>
+
+        <TextBlock Name="Distance" Text="Distance" />
+
+        <Button Content="Get Distance" Click="Button_Click"/>
+
+    </StackPanel>
+</Page>
